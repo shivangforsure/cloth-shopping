@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: black; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 50px;
+}
+
+.tabs {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
+
+.tabs > a:hover, .infos>p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inner {
+    width: 100%;
+    height: calc(100% - 50px); /* Subtract the height of the navbar to ensure content below it */
+    background-color: black;
+    border: 1px solid black;
+}
+.heading{
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.heading:hover{
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+}
+/* Rest of your CSS... */
+.container{
+    min-height: 100vh;
+    /* background-color: black; */
+}
+.inner-top{
+    width: 100%;
+    height: 60%;
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.myimg{
+    position: absolute;
+    width: 20rem;
+    bottom: -30px;
+    left: 50vw;
+}
+.inner-top-left{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border-right: 1px solid black;
+    padding: 20px;
+}
+.inner-top-right{
+    width: 40%;
+    /* height: 100%; */
+    /* background-color: white; */
+    border-radius: 15px;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/03/09/54/48/1000_F_309544898_S9wJdk4qeKUtvYAZ7WTBdM5Pq1mVrgX9.jpg");
+    background-size:cover;
+    background-position: right;
+}
+h1{
+    margin: 1.75rem;
+    margin-top: 25px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 5rem;
+    line-height: 70px;
+    font-weight: thiner;
+}
+.btn{
+    margin-left: 1.75rem;
+    width:125px;
+    height: 35px;
+    border-radius: 150px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background:linear-gradient(45deg, rgb(234, 206, 211), rgb(244, 122, 143));
+    cursor: pointer;
+}
+.connects{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    /* margin-top: 20px; */
+}
+.mail{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: light;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.innerbottom{
+    width: 100%;
+    display: flex;
+    /* background-color: ; */
+    height: 40vh;
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    /* min-height: calc(100vh - 50px); */
+    flex-wrap: wrap;
+}
+.cards{
+    width: 33.333%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* text-align: left; */
+    transition: 0.5s ease-out;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+.cards:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+footer{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    background-color: white;
+
+}
+.infos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    /* color: white; */
+    /* align-items: center; */
+}
+h5{
+    /* color: white; */
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+.mail:hover{
+    color: white;
+    background-color: black;
+}
+.lastcard{
+    color: black;
+    background-image: none;
+    background-color: white;
+    transition:2s ease-out;
+}
+.lastcard:hover{
+    background-image: url("https://img.freepik.com/premium-vector/lined-seamless-vector-pattern-with-twisted-lines-geometric-abstract-background-stripy-net-optical-maze-web-network-black-white-design_570429-47821.jpg?w=2000");
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+/* For webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    transition: 1.5s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+    /* border: 1px solid black; */
+}
+.inner-bottom-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:415px) {
+    h1{
+        font-size: 4rem;
+        line-height: 40%;
+    }
+    .inner-top-right{
+        display: none;
+    }
+    .inner-top-left{
+        width: 100vw;
+    }
+    .myimg{
+        z-index: 1;
+    }
+    .innerbottom{
+        height: auto;
+    }
+    .cards{
+        height: 12rem;
+        padding: 10px;
+        /* text-align: center; */
+        cursor: pointer;
+    }
+    cards:hover{
+        padding: 10px;
+    }
+}
+
+
+
+  

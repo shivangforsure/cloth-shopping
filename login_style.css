@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    background-color: #e6e7eb;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+
+}
+p{
+    font-size: 10px;
+}
+.checks{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.checks>a>p{
+    font-size: 9.1px;
+    font-weight: bold;
+}
+#checkbox{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    /* display: flex;
+    align-items: center; */
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    background-image: url("https://images.unsplash.com/photo-1618566105831-d604c45a7316?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBtYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    width: 45%;
+    height: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+form{
+    position: relative;
+    height: 85%;
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    /* margin-top: 100px; */
+    /* background-color: red; */
+}
+fieldset{
+    width: 60%;
+    border: none;
+    /* padding: 10px; 
+    margin-bottom: 10px; */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+legend{
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: none;
+    font-size: 12px;
+    margin: 5px;
+    width: 100%;
+}
+
+button{
+    margin-top: 15px;
+    width: 60%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover a{
+    color: black;
+}
+.google{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    width: 60%;
+}
+.google:hover{
+    color: white;
+    background-color: black;
+}
+.intro{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    line-height: 30px;
+    /* background-color: red; */
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.25rem;
+
+}
+.fields{
+    width: 100%;
+    height: 100%;
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* @media screen and (max-width: 415px) {
+    .image {
+        display: none; /* Hide the image 
+    }
+
+    body {
+        overflow: hidden; /* Prevent scrolling 
+    }
+
+    form {
+        height: 60%; /* Ensure form takes full height 
+        width: 100vw;
+    }
+    .checks{
+        width: 75%;
+    }
+
+    /* .intro {
+        margin-top: 0; /* Remove top margin on intro 
+    } 
+} */
+@media screen and (max-width: 415px) {
+    .image {
+        display: none; /* Hide the image */
+    }
+
+    body {
+        overflow: hidden; /* Prevent scrolling */
+    }
+
+    html, body {
+        height: 100%; /* Ensure both html and body are 100% height */
+        transform: scale(1.1);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Make .main take 100% height of the viewport */
+    }
+
+    form {
+        height: auto; /* Reset form height to auto */
+        width: 100%; /* Ensure form takes full width */
+        max-width: 100%; /* Make sure form doesn't exceed viewport width */
+        padding: 10px;
+    }
+
+    .checks {
+        width: 85%;
+    }
+}
+
+
+
+
+
+
